@@ -1,6 +1,6 @@
 import sys
 from PyFlow.App import PyFlow
-from Qt.QtWidgets import QApplication
+from PySide2.QtWidgets import QApplication
 
 from PySide2 import QtWidgets
 import maya.OpenMayaUI as omui
