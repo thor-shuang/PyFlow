@@ -1,19 +1,19 @@
-## Copyright 2015-2019 Ilgar Lunin, Pedro Cabrera
+# Copyright 2015-2019 Ilgar Lunin, Pedro Cabrera
 
-## Licensed under the Apache License, Version 2.0 (the "License");
-## you may not use this file except in compliance with the License.
-## You may obtain a copy of the License at
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
 
-##     http://www.apache.org/licenses/LICENSE-2.0
+#     http://www.apache.org/licenses/LICENSE-2.0
 
-## Unless required by applicable law or agreed to in writing, software
-## distributed under the License is distributed on an "AS IS" BASIS,
-## WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-## See the License for the specific language governing permissions and
-## limitations under the License.
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
 
 
-from PyFlow.Core import(
+from PyFlow.Core import (
     FunctionLibraryBase,
     IMPLEMENT_NODE
 )
@@ -22,19 +22,22 @@ from PyFlow.Core.Common import *
 
 class MathAbstractLib(FunctionLibraryBase):
     """doc string for MathAbstractLib"""
+
     def __init__(self, packageName):
         super(MathAbstractLib, self).__init__(packageName)
 
     @staticmethod
-    @IMPLEMENT_NODE(returns=("BoolPin", False), meta={NodeMeta.CATEGORY: 'Math|Basic', NodeMeta.KEYWORDS: ["=", "operator"]})
-    ## Is a equal b
+    @IMPLEMENT_NODE(returns=("BoolPin", False),
+                    meta={NodeMeta.CATEGORY: 'Math|Basic', NodeMeta.KEYWORDS: ["=", "operator"]})
+    # Is a equal b
     def isEqual(a=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"}),
                 b=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"})):
         """Is a equal b."""
         return a == b
 
     @staticmethod
-    @IMPLEMENT_NODE(returns=("BoolPin", False), meta={NodeMeta.CATEGORY: 'Math|Basic', NodeMeta.KEYWORDS: [">", "operator"]})
+    @IMPLEMENT_NODE(returns=("BoolPin", False),
+                    meta={NodeMeta.CATEGORY: 'Math|Basic', NodeMeta.KEYWORDS: [">", "operator"]})
     def isGreater(a=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"}),
                   b=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"}),
                   result=(REF, ("BoolPin", False))):
@@ -42,7 +45,8 @@ class MathAbstractLib(FunctionLibraryBase):
         return a > b
 
     @staticmethod
-    @IMPLEMENT_NODE(returns=("BoolPin", False), meta={NodeMeta.CATEGORY: 'Math|Basic', NodeMeta.KEYWORDS: [">", "operator"]})
+    @IMPLEMENT_NODE(returns=("BoolPin", False),
+                    meta={NodeMeta.CATEGORY: 'Math|Basic', NodeMeta.KEYWORDS: [">", "operator"]})
     def isGreaterOrEqual(a=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"}),
                          b=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"}),
                          result=(REF, ("BoolPin", False))):
@@ -50,53 +54,68 @@ class MathAbstractLib(FunctionLibraryBase):
         return a >= b
 
     @staticmethod
-    @IMPLEMENT_NODE(returns=("BoolPin", False), meta={NodeMeta.CATEGORY: 'Math|Basic', NodeMeta.KEYWORDS: ["<", "operator"]})
+    @IMPLEMENT_NODE(returns=("BoolPin", False),
+                    meta={NodeMeta.CATEGORY: 'Math|Basic', NodeMeta.KEYWORDS: ["<", "operator"]})
     def isLess(a=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"}), b=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"}),
                result=(REF, ("BoolPin", False))):
         """Operator **<**."""
         return a < b
 
     @staticmethod
-    @IMPLEMENT_NODE(returns=("BoolPin", False), meta={NodeMeta.CATEGORY: 'Math|Basic', NodeMeta.KEYWORDS: ["<", "operator"]})
-    def isLessOrEqual(a=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"}), b=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"})):
+    @IMPLEMENT_NODE(returns=("BoolPin", False),
+                    meta={NodeMeta.CATEGORY: 'Math|Basic', NodeMeta.KEYWORDS: ["<", "operator"]})
+    def isLessOrEqual(a=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"}),
+                      b=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"})):
         """Operator **<=**."""
         return a <= b
 
     @staticmethod
-    @IMPLEMENT_NODE(returns=(("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"})), meta={NodeMeta.CATEGORY: 'Math|Basic', NodeMeta.KEYWORDS: ['+', 'append', "sum", "operator"]})
+    @IMPLEMENT_NODE(returns=(("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"})),
+                    meta={NodeMeta.CATEGORY: 'Math|Basic', NodeMeta.KEYWORDS: ['+', 'append', "sum", "operator"]})
     def add(a=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"}), b=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"})):
         """Operator **+**."""
         return a + b
 
     @staticmethod
-    @IMPLEMENT_NODE(returns=(("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"})), meta={NodeMeta.CATEGORY: 'Math|Basic', NodeMeta.KEYWORDS: ['-', "operator", "minus"]})
-    def subtract(a=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"}), b=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"})):
+    @IMPLEMENT_NODE(returns=(("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"})),
+                    meta={NodeMeta.CATEGORY: 'Math|Basic', NodeMeta.KEYWORDS: ['-', "operator", "minus"]})
+    def subtract(a=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"}),
+                 b=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"})):
         """Operator **-**."""
         return a - b
 
     @staticmethod
-    @IMPLEMENT_NODE(returns=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"}), meta={NodeMeta.CATEGORY: 'Math|Basic', NodeMeta.KEYWORDS: ['/', "divide", "operator"]})
-    def divide(a=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"}), b=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"})):
+    @IMPLEMENT_NODE(returns=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"}),
+                    meta={NodeMeta.CATEGORY: 'Math|Basic', NodeMeta.KEYWORDS: ['/', "divide", "operator"]})
+    def divide(a=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"}),
+               b=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"})):
         """Operator **/**."""
         return a / b
 
     @staticmethod
-    @IMPLEMENT_NODE(returns=(("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"})), meta={NodeMeta.CATEGORY: 'Math|Basic', NodeMeta.KEYWORDS: ['*', "multiply", "operator"]})
-    def multiply(a=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"}), b=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"})):
+    @IMPLEMENT_NODE(returns=(("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"})),
+                    meta={NodeMeta.CATEGORY: 'Math|Basic', NodeMeta.KEYWORDS: ['*', "multiply", "operator"]})
+    def multiply(a=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"}),
+                 b=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1"})):
         """Operator *****."""
         return a * b
 
     @staticmethod
-    @IMPLEMENT_NODE(returns=("BoolPin", False), meta={NodeMeta.CATEGORY: 'Math|Basic', NodeMeta.KEYWORDS: ["in", "range"]})
-    def inRange(Value=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1", PinSpecifires.SUPPORTED_DATA_TYPES: ["FloatPin", "IntPin"]}),
-                RangeMin=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1", PinSpecifires.SUPPORTED_DATA_TYPES: ["FloatPin", "IntPin"]}),
-                RangeMax=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1", PinSpecifires.SUPPORTED_DATA_TYPES: ["FloatPin", "IntPin"]}),
+    @IMPLEMENT_NODE(returns=("BoolPin", False),
+                    meta={NodeMeta.CATEGORY: 'Math|Basic', NodeMeta.KEYWORDS: ["in", "range"]})
+    def inRange(Value=(
+    "AnyPin", None, {PinSpecifires.CONSTRAINT: "1", PinSpecifires.SUPPORTED_DATA_TYPES: ["FloatPin", "IntPin"]}),
+                RangeMin=("AnyPin", None,
+                          {PinSpecifires.CONSTRAINT: "1", PinSpecifires.SUPPORTED_DATA_TYPES: ["FloatPin", "IntPin"]}),
+                RangeMax=("AnyPin", None,
+                          {PinSpecifires.CONSTRAINT: "1", PinSpecifires.SUPPORTED_DATA_TYPES: ["FloatPin", "IntPin"]}),
                 InclusiveMin=("BoolPin", False),
                 InclusiveMax=("BoolPin", False)):
         """Returns true if value is between Min and Max (V >= Min && V <= Max) If InclusiveMin is true, value needs to be equal or larger than Min,\
              else it needs to be larger If InclusiveMax is true, value needs to be smaller or equal than Max, else it needs to be smaller
         """
-        return ((Value >= RangeMin) if InclusiveMin else (Value > RangeMin)) and ((Value <= RangeMax) if InclusiveMax else (Value < RangeMax))
+        return ((Value >= RangeMin) if InclusiveMin else (Value > RangeMin)) and (
+            (Value <= RangeMax) if InclusiveMax else (Value < RangeMax))
 
     @staticmethod
     @IMPLEMENT_NODE(returns=('FloatPin', 0.0), meta={NodeMeta.CATEGORY: 'Math|Basic', NodeMeta.KEYWORDS: []})
@@ -129,14 +148,21 @@ class MathAbstractLib(FunctionLibraryBase):
         return clamp(i, imin, imax)
 
     @staticmethod
-    @IMPLEMENT_NODE(returns=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1", PinSpecifires.SUPPORTED_DATA_TYPES: ["FloatPin", "IntPin"]}), meta={NodeMeta.CATEGORY: 'Math|Basic', NodeMeta.KEYWORDS: ["operator"]})
-    def modulo(a=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1", PinSpecifires.SUPPORTED_DATA_TYPES: ["FloatPin", "IntPin"]}),
-               b=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1", PinSpecifires.SUPPORTED_DATA_TYPES: ["FloatPin", "IntPin"]})):
+    @IMPLEMENT_NODE(returns=(
+    "AnyPin", None, {PinSpecifires.CONSTRAINT: "1", PinSpecifires.SUPPORTED_DATA_TYPES: ["FloatPin", "IntPin"]}),
+                    meta={NodeMeta.CATEGORY: 'Math|Basic', NodeMeta.KEYWORDS: ["operator"]})
+    def modulo(a=(
+    "AnyPin", None, {PinSpecifires.CONSTRAINT: "1", PinSpecifires.SUPPORTED_DATA_TYPES: ["FloatPin", "IntPin"]}),
+               b=("AnyPin", None,
+                  {PinSpecifires.CONSTRAINT: "1", PinSpecifires.SUPPORTED_DATA_TYPES: ["FloatPin", "IntPin"]})):
         """Modulo (A % B)."""
         return a % b
 
     @staticmethod
-    @IMPLEMENT_NODE(returns=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1", PinSpecifires.SUPPORTED_DATA_TYPES: ["FloatPin", "IntPin"]}), meta={NodeMeta.CATEGORY: 'Math|Basic', NodeMeta.KEYWORDS: []})
-    def abs(inp=("AnyPin", None, {PinSpecifires.CONSTRAINT: "1", PinSpecifires.SUPPORTED_DATA_TYPES: ["FloatPin", "IntPin"]})):
+    @IMPLEMENT_NODE(returns=(
+    "AnyPin", None, {PinSpecifires.CONSTRAINT: "1", PinSpecifires.SUPPORTED_DATA_TYPES: ["FloatPin", "IntPin"]}),
+                    meta={NodeMeta.CATEGORY: 'Math|Basic', NodeMeta.KEYWORDS: []})
+    def abs(inp=(
+    "AnyPin", None, {PinSpecifires.CONSTRAINT: "1", PinSpecifires.SUPPORTED_DATA_TYPES: ["FloatPin", "IntPin"]})):
         """Return the absolute value of a number."""
         return abs(inp)
