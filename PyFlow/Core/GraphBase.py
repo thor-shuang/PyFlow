@@ -400,22 +400,22 @@ class GraphBase(ISerializable):
         return result
 
     def getInputNode(self):
-        """Creates and adds to graph :class:`~PyFlow.Packages.PyFlowBase.Nodes.graphNodes.graphInputs` node
+        """Creates and adds to graph :class:`~PyFlow.Packages.Base.Nodes.graphNodes.graphInputs` node
 
         pins on this node will be exposed on compound node as input pins
         :rtype: :class:`~PyFlow.Core.NodeBase.NodeBase`
         """
-        node = getRawNodeInstance("graphInputs", "PyFlowBase")
+        node = getRawNodeInstance("graphInputs", "Base")
         self.addNode(node)
         return node
 
     def getOutputNode(self):
-        """Creates and adds to graph :class:`~PyFlow.Packages.PyFlowBase.Nodes.graphNodes.graphOutputs` node.
+        """Creates and adds to graph :class:`~PyFlow.Packages.Base.Nodes.graphNodes.graphOutputs` node.
 
         pins on this node will be exposed on compound node as output pins
         :rtype: :class:`~PyFlow.Core.NodeBase.NodeBase`
         """
-        node = getRawNodeInstance("graphOutputs", "PyFlowBase")
+        node = getRawNodeInstance("graphOutputs", "Base")
         self.addNode(node)
         return node
 

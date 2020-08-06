@@ -50,7 +50,7 @@ from PyFlow.UI.Utils.stylesheet import editableStyleSheet
 from PyFlow.UI.ContextMenuGenerator import ContextMenuGenerator
 from PyFlow.UI.Widgets.PreferencesWindow import PreferencesWindow
 try:
-    from PyFlow.Packages.PyFlowBase.Tools.PropertiesTool import PropertiesTool
+    from PyFlow.Packages.Base.Tools.PropertiesTool import PropertiesTool
 except:
     pass
 from PyFlow.Wizards.PackageWizard import PackageWizard

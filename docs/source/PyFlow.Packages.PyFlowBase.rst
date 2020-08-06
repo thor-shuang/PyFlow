@@ -1,4 +1,4 @@
-PyFlow.Packages.PyFlowBase package
+PyFlow.Packages.Base package
 ==================================
 
 Subpackages
@@ -6,18 +6,18 @@ Subpackages
 
 .. toctree::
 
-   PyFlow.Packages.PyFlowBase.Exporters
-   PyFlow.Packages.PyFlowBase.Factories
-   PyFlow.Packages.PyFlowBase.FunctionLibraries
-   PyFlow.Packages.PyFlowBase.Nodes
-   PyFlow.Packages.PyFlowBase.Pins
-   PyFlow.Packages.PyFlowBase.PrefsWidgets
-   PyFlow.Packages.PyFlowBase.Tools
-   PyFlow.Packages.PyFlowBase.UI
+   PyFlow.Packages.Base.Exporters
+   PyFlow.Packages.Base.Factories
+   PyFlow.Packages.Base.FunctionLibraries
+   PyFlow.Packages.Base.Nodes
+   PyFlow.Packages.Base.Pins
+   PyFlow.Packages.Base.PrefsWidgets
+   PyFlow.Packages.Base.Tools
+   PyFlow.Packages.Base.UI
 
 Module contents
 ---------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase
+.. automodule:: PyFlow.Packages.Base
    :members:
    :show-inheritance:

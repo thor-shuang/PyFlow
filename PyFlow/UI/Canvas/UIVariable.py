@@ -233,7 +233,7 @@ class UIVariable(QWidget, IPropertiesViewSupport):
         refs = [n.getWrapper() for n in self._rawVariable.findRefs()]
         app = self.variablesWidget.pyFlowInstance
         if "Search results" not in [t.name() for t in app.getRegisteredTools()]:
-            app.invokeDockToolByName("PyFlowBase", "Search results")
+            app.invokeDockToolByName("Base", "Search results")
         self.variablesWidget.pyFlowInstance.getCanvas().requestShowSearchResults.emit(refs)
 
     def onKillClicked(self):

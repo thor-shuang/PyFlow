@@ -201,7 +201,7 @@ class BlueprintCanvas(CanvasBase):
             node._rawNode.kill()
 
         compoundTemplate = NodeBase.jsonTemplate()
-        compoundTemplate['package'] = 'PyFlowBase'
+        compoundTemplate['package'] = 'Base'
         compoundTemplate['type'] = 'compound'
         compoundTemplate['name'] = 'compound'
         compoundTemplate['uuid'] = str(uuid.uuid4())
@@ -219,7 +219,7 @@ class BlueprintCanvas(CanvasBase):
 
         if len(inputPins) > 0:
             graphInputsTemplate = NodeBase.jsonTemplate()
-            graphInputsTemplate['package'] = 'PyFlowBase'
+            graphInputsTemplate['package'] = 'Base'
             graphInputsTemplate['type'] = 'graphInputs'
             graphInputsTemplate['name'] = 'graphInputs'
             graphInputsTemplate['uuid'] = str(uuid.uuid4())
@@ -238,7 +238,7 @@ class BlueprintCanvas(CanvasBase):
 
         if len(outputPins) > 0:
             graphOutputsTemplate = NodeBase.jsonTemplate()
-            graphOutputsTemplate['package'] = 'PyFlowBase'
+            graphOutputsTemplate['package'] = 'Base'
             graphOutputsTemplate['type'] = 'graphOutputs'
             graphOutputsTemplate['name'] = 'graphOutputs'
             graphOutputsTemplate['uuid'] = str(uuid.uuid4())
@@ -737,7 +737,7 @@ class BlueprintCanvas(CanvasBase):
 
     def getInputNode(self):
         nodeTemplate = NodeBase.jsonTemplate()
-        nodeTemplate['package'] = "PyFlowBase"
+        nodeTemplate['package'] = "Base"
         nodeTemplate['lib'] = None
         nodeTemplate['type'] = "graphInputs"
         nodeTemplate['name'] = "graphInputs"
@@ -751,7 +751,7 @@ class BlueprintCanvas(CanvasBase):
 
     def getOutputNode(self):
         nodeTemplate = NodeBase.jsonTemplate()
-        nodeTemplate['package'] = "PyFlowBase"
+        nodeTemplate['package'] = "Base"
         nodeTemplate['lib'] = None
         nodeTemplate['type'] = "graphOutputs"
         nodeTemplate['name'] = "graphOutputs"

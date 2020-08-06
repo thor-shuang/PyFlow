@@ -1,307 +1,307 @@
-PyFlow.Packages.PyFlowBase.Nodes package
+PyFlow.Packages.Base.Nodes package
 ========================================
 
 Submodules
 ----------
 
-PyFlow.Packages.PyFlowBase.Nodes.address module
+PyFlow.Packages.Base.Nodes.address module
 -----------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.address
+.. automodule:: PyFlow.Packages.Base.Nodes.address
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.branch module
+PyFlow.Packages.Base.Nodes.branch module
 ----------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.branch
+.. automodule:: PyFlow.Packages.Base.Nodes.branch
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.charge module
+PyFlow.Packages.Base.Nodes.charge module
 ----------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.charge
+.. automodule:: PyFlow.Packages.Base.Nodes.charge
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.cliexit module
+PyFlow.Packages.Base.Nodes.cliexit module
 -----------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.cliexit
+.. automodule:: PyFlow.Packages.Base.Nodes.cliexit
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.colorRamp module
+PyFlow.Packages.Base.Nodes.colorRamp module
 -------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.colorRamp
+.. automodule:: PyFlow.Packages.Base.Nodes.colorRamp
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.commentNode module
+PyFlow.Packages.Base.Nodes.commentNode module
 ---------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.commentNode
+.. automodule:: PyFlow.Packages.Base.Nodes.commentNode
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.compound module
+PyFlow.Packages.Base.Nodes.compound module
 ------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.compound
+.. automodule:: PyFlow.Packages.Base.Nodes.compound
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.consoleOutput module
+PyFlow.Packages.Base.Nodes.consoleOutput module
 -----------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.consoleOutput
+.. automodule:: PyFlow.Packages.Base.Nodes.consoleOutput
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.constant module
+PyFlow.Packages.Base.Nodes.constant module
 ------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.constant
+.. automodule:: PyFlow.Packages.Base.Nodes.constant
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.convertTo module
+PyFlow.Packages.Base.Nodes.convertTo module
 -------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.convertTo
+.. automodule:: PyFlow.Packages.Base.Nodes.convertTo
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.delay module
+PyFlow.Packages.Base.Nodes.delay module
 ---------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.delay
+.. automodule:: PyFlow.Packages.Base.Nodes.delay
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.deltaTime module
+PyFlow.Packages.Base.Nodes.deltaTime module
 -------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.deltaTime
+.. automodule:: PyFlow.Packages.Base.Nodes.deltaTime
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.dictKeys module
+PyFlow.Packages.Base.Nodes.dictKeys module
 ------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.dictKeys
+.. automodule:: PyFlow.Packages.Base.Nodes.dictKeys
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.doN module
+PyFlow.Packages.Base.Nodes.doN module
 -------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.doN
+.. automodule:: PyFlow.Packages.Base.Nodes.doN
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.doOnce module
+PyFlow.Packages.Base.Nodes.doOnce module
 ----------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.doOnce
+.. automodule:: PyFlow.Packages.Base.Nodes.doOnce
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.flipFlop module
+PyFlow.Packages.Base.Nodes.flipFlop module
 ------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.flipFlop
+.. automodule:: PyFlow.Packages.Base.Nodes.flipFlop
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.floatRamp module
+PyFlow.Packages.Base.Nodes.floatRamp module
 -------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.floatRamp
+.. automodule:: PyFlow.Packages.Base.Nodes.floatRamp
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.forEachLoop module
+PyFlow.Packages.Base.Nodes.forEachLoop module
 ---------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.forEachLoop
+.. automodule:: PyFlow.Packages.Base.Nodes.forEachLoop
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.forLoop module
+PyFlow.Packages.Base.Nodes.forLoop module
 -----------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.forLoop
+.. automodule:: PyFlow.Packages.Base.Nodes.forLoop
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.forLoopBegin module
+PyFlow.Packages.Base.Nodes.forLoopBegin module
 ----------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.forLoopBegin
+.. automodule:: PyFlow.Packages.Base.Nodes.forLoopBegin
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.forLoopWithBreak module
+PyFlow.Packages.Base.Nodes.forLoopWithBreak module
 --------------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.forLoopWithBreak
+.. automodule:: PyFlow.Packages.Base.Nodes.forLoopWithBreak
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.getVar module
+PyFlow.Packages.Base.Nodes.getVar module
 ----------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.getVar
+.. automodule:: PyFlow.Packages.Base.Nodes.getVar
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.graphNodes module
+PyFlow.Packages.Base.Nodes.graphNodes module
 --------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.graphNodes
+.. automodule:: PyFlow.Packages.Base.Nodes.graphNodes
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.imageDisplay module
+PyFlow.Packages.Base.Nodes.imageDisplay module
 ----------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.imageDisplay
+.. automodule:: PyFlow.Packages.Base.Nodes.imageDisplay
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.loopEnd module
+PyFlow.Packages.Base.Nodes.loopEnd module
 -----------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.loopEnd
+.. automodule:: PyFlow.Packages.Base.Nodes.loopEnd
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.makeAnyDict module
+PyFlow.Packages.Base.Nodes.makeAnyDict module
 ---------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.makeAnyDict
+.. automodule:: PyFlow.Packages.Base.Nodes.makeAnyDict
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.makeArray module
+PyFlow.Packages.Base.Nodes.makeArray module
 -------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.makeArray
+.. automodule:: PyFlow.Packages.Base.Nodes.makeArray
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.makeDict module
+PyFlow.Packages.Base.Nodes.makeDict module
 ------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.makeDict
+.. automodule:: PyFlow.Packages.Base.Nodes.makeDict
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.makeDictElement module
+PyFlow.Packages.Base.Nodes.makeDictElement module
 -------------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.makeDictElement
+.. automodule:: PyFlow.Packages.Base.Nodes.makeDictElement
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.makeList module
+PyFlow.Packages.Base.Nodes.makeList module
 ------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.makeList
+.. automodule:: PyFlow.Packages.Base.Nodes.makeList
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.pythonNode module
+PyFlow.Packages.Base.Nodes.pythonNode module
 --------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.pythonNode
+.. automodule:: PyFlow.Packages.Base.Nodes.pythonNode
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.reroute module
+PyFlow.Packages.Base.Nodes.reroute module
 -----------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.reroute
+.. automodule:: PyFlow.Packages.Base.Nodes.reroute
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.rerouteExecs module
+PyFlow.Packages.Base.Nodes.rerouteExecs module
 ----------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.rerouteExecs
+.. automodule:: PyFlow.Packages.Base.Nodes.rerouteExecs
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.retriggerableDelay module
+PyFlow.Packages.Base.Nodes.retriggerableDelay module
 ----------------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.retriggerableDelay
+.. automodule:: PyFlow.Packages.Base.Nodes.retriggerableDelay
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.sequence module
+PyFlow.Packages.Base.Nodes.sequence module
 ------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.sequence
+.. automodule:: PyFlow.Packages.Base.Nodes.sequence
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.setVar module
+PyFlow.Packages.Base.Nodes.setVar module
 ----------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.setVar
+.. automodule:: PyFlow.Packages.Base.Nodes.setVar
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.stickyNote module
+PyFlow.Packages.Base.Nodes.stickyNote module
 --------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.stickyNote
+.. automodule:: PyFlow.Packages.Base.Nodes.stickyNote
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.stringToArray module
+PyFlow.Packages.Base.Nodes.stringToArray module
 -----------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.stringToArray
+.. automodule:: PyFlow.Packages.Base.Nodes.stringToArray
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.switchOnString module
+PyFlow.Packages.Base.Nodes.switchOnString module
 ------------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.switchOnString
+.. automodule:: PyFlow.Packages.Base.Nodes.switchOnString
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.tick module
+PyFlow.Packages.Base.Nodes.tick module
 --------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.tick
+.. automodule:: PyFlow.Packages.Base.Nodes.tick
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.timer module
+PyFlow.Packages.Base.Nodes.timer module
 ---------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.timer
+.. automodule:: PyFlow.Packages.Base.Nodes.timer
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.whileLoop module
+PyFlow.Packages.Base.Nodes.whileLoop module
 -------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.whileLoop
+.. automodule:: PyFlow.Packages.Base.Nodes.whileLoop
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Nodes.whileLoopBegin module
+PyFlow.Packages.Base.Nodes.whileLoopBegin module
 ------------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes.whileLoopBegin
+.. automodule:: PyFlow.Packages.Base.Nodes.whileLoopBegin
    :members:
    :show-inheritance:
 
@@ -309,6 +309,6 @@ PyFlow.Packages.PyFlowBase.Nodes.whileLoopBegin module
 Module contents
 ---------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Nodes
+.. automodule:: PyFlow.Packages.Base.Nodes
    :members:
    :show-inheritance:

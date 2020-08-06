@@ -1,13 +1,13 @@
-PyFlow.Packages.PyFlowBase.Exporters package
+PyFlow.Packages.Base.Exporters package
 ============================================
 
 Submodules
 ----------
 
-PyFlow.Packages.PyFlowBase.Exporters.PythonScriptExporter module
+PyFlow.Packages.Base.Exporters.PythonScriptExporter module
 ----------------------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Exporters.PythonScriptExporter
+.. automodule:: PyFlow.Packages.Base.Exporters.PythonScriptExporter
    :members:
    :show-inheritance:
 
@@ -15,6 +15,6 @@ PyFlow.Packages.PyFlowBase.Exporters.PythonScriptExporter module
 Module contents
 ---------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Exporters
+.. automodule:: PyFlow.Packages.Base.Exporters
    :members:
    :show-inheritance:

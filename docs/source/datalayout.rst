@@ -8,4 +8,4 @@ Nodes contains :class:`pins <PyFlow.Core.PinBase.PinBase>`.
 
 .. image:: resources/dataLayout.png
 
-.. seealso:: :class:`~PyFlow.Packages.PyFlowBase.Nodes.compound.compound`
+.. seealso:: :class:`~PyFlow.Packages.Base.Nodes.compound.compound`

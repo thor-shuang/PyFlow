@@ -1,146 +1,146 @@
-PyFlow.Packages.PyFlowBase.UI package
+PyFlow.Packages.Base.UI package
 =====================================
 
 Submodules
 ----------
 
-PyFlow.Packages.PyFlowBase.UI.UIAnyPin module
+PyFlow.Packages.Base.UI.UIAnyPin module
 ---------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.UI.UIAnyPin
+.. automodule:: PyFlow.Packages.Base.UI.UIAnyPin
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.UI.UIColorRamp module
+PyFlow.Packages.Base.UI.UIColorRamp module
 ------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.UI.UIColorRamp
+.. automodule:: PyFlow.Packages.Base.UI.UIColorRamp
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.UI.UICommentNode module
+PyFlow.Packages.Base.UI.UICommentNode module
 --------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.UI.UICommentNode
+.. automodule:: PyFlow.Packages.Base.UI.UICommentNode
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.UI.UICompoundNode module
+PyFlow.Packages.Base.UI.UICompoundNode module
 ---------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.UI.UICompoundNode
+.. automodule:: PyFlow.Packages.Base.UI.UICompoundNode
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.UI.UIConstantNode module
+PyFlow.Packages.Base.UI.UIConstantNode module
 ---------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.UI.UIConstantNode
+.. automodule:: PyFlow.Packages.Base.UI.UIConstantNode
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.UI.UIConvertToNode module
+PyFlow.Packages.Base.UI.UIConvertToNode module
 ----------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.UI.UIConvertToNode
+.. automodule:: PyFlow.Packages.Base.UI.UIConvertToNode
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.UI.UIExecPin module
+PyFlow.Packages.Base.UI.UIExecPin module
 ----------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.UI.UIExecPin
+.. automodule:: PyFlow.Packages.Base.UI.UIExecPin
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.UI.UIFloatRamp module
+PyFlow.Packages.Base.UI.UIFloatRamp module
 ------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.UI.UIFloatRamp
+.. automodule:: PyFlow.Packages.Base.UI.UIFloatRamp
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.UI.UIForLoopBeginNode module
+PyFlow.Packages.Base.UI.UIForLoopBeginNode module
 -------------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.UI.UIForLoopBeginNode
+.. automodule:: PyFlow.Packages.Base.UI.UIForLoopBeginNode
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.UI.UIGetVarNode module
+PyFlow.Packages.Base.UI.UIGetVarNode module
 -------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.UI.UIGetVarNode
+.. automodule:: PyFlow.Packages.Base.UI.UIGetVarNode
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.UI.UIGraphNodes module
+PyFlow.Packages.Base.UI.UIGraphNodes module
 -------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.UI.UIGraphNodes
+.. automodule:: PyFlow.Packages.Base.UI.UIGraphNodes
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.UI.UIImageDisplayNode module
+PyFlow.Packages.Base.UI.UIImageDisplayNode module
 -------------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.UI.UIImageDisplayNode
+.. automodule:: PyFlow.Packages.Base.UI.UIImageDisplayNode
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.UI.UIMakeDictNode module
+PyFlow.Packages.Base.UI.UIMakeDictNode module
 ---------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.UI.UIMakeDictNode
+.. automodule:: PyFlow.Packages.Base.UI.UIMakeDictNode
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.UI.UIPythonNode module
+PyFlow.Packages.Base.UI.UIPythonNode module
 -------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.UI.UIPythonNode
+.. automodule:: PyFlow.Packages.Base.UI.UIPythonNode
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.UI.UIRerouteNodeSmall module
+PyFlow.Packages.Base.UI.UIRerouteNodeSmall module
 -------------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.UI.UIRerouteNodeSmall
+.. automodule:: PyFlow.Packages.Base.UI.UIRerouteNodeSmall
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.UI.UISequenceNode module
+PyFlow.Packages.Base.UI.UISequenceNode module
 ---------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.UI.UISequenceNode
+.. automodule:: PyFlow.Packages.Base.UI.UISequenceNode
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.UI.UISetVarNode module
+PyFlow.Packages.Base.UI.UISetVarNode module
 -------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.UI.UISetVarNode
+.. automodule:: PyFlow.Packages.Base.UI.UISetVarNode
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.UI.UIStickyNote module
+PyFlow.Packages.Base.UI.UIStickyNote module
 -------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.UI.UIStickyNote
+.. automodule:: PyFlow.Packages.Base.UI.UIStickyNote
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.UI.UISwitchOnStringNode module
+PyFlow.Packages.Base.UI.UISwitchOnStringNode module
 ---------------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.UI.UISwitchOnStringNode
+.. automodule:: PyFlow.Packages.Base.UI.UISwitchOnStringNode
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.UI.UIWhileLoopBeginNode module
+PyFlow.Packages.Base.UI.UIWhileLoopBeginNode module
 ---------------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.UI.UIWhileLoopBeginNode
+.. automodule:: PyFlow.Packages.Base.UI.UIWhileLoopBeginNode
    :members:
    :show-inheritance:
 
@@ -148,6 +148,6 @@ PyFlow.Packages.PyFlowBase.UI.UIWhileLoopBeginNode module
 Module contents
 ---------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.UI
+.. automodule:: PyFlow.Packages.Base.UI
    :members:
    :show-inheritance:

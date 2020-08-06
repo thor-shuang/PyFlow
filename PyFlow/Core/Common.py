@@ -501,7 +501,7 @@ def connectPinsByIndexes(lhsNode=None, lhsOutPinIndex=0, rhsNode=None, rhsInPinI
 def traverseConstrainedPins(startFrom, callback):
     """Iterate over constrained and connected pins
 
-    Iterates over all constrained chained pins of type :class:`Any <PyFlow.Packages.PyFlowBase.Pins.AnyPin.AnyPin>` and passes pin into callback function. Callback will be executed once for every pin
+    Iterates over all constrained chained pins of type :class:`Any <PyFlow.Packages.Base.Pins.AnyPin.AnyPin>` and passes pin into callback function. Callback will be executed once for every pin
 
     :param startFrom: First pin to start Iteration
     :type startFrom: :class:`~PyFlow.Core.PinBase.PinBase`
@@ -766,13 +766,13 @@ class PinOptions(Flag):
 
     AllowMultipleConnections = auto()  #: This enables pin to allow more that one input connection. See :func:`~PyFlow.Core.Common.connectPins`
 
-    ChangeTypeOnConnection = auto()  #: Used by :class:`~PyFlow.Packages.PyFlowBase.Pins.AnyPin.AnyPin` to determine if it can change its data type on new connection.
+    ChangeTypeOnConnection = auto()  #: Used by :class:`~PyFlow.Packages.Base.Pins.AnyPin.AnyPin` to determine if it can change its data type on new connection.
     RenamingEnabled = auto()  #: Determines if pin can be renamed
     Dynamic = auto()  #: Specifies if pin was created dynamically (during program runtime)
     AlwaysPushDirty = auto()  #: Pin will always be seen as dirty (computation needed)
     Storable = auto()  #: Determines if pin data can be stored when pin serialized
-    AllowAny = auto()  #: Special flag that allow a pin to be :class:`~PyFlow.Packages.PyFlowBase.Pins.AnyPin.AnyPin`, which means non typed without been marked as error. By default a :py:class:`PyFlow.Packages.PyFlowBase.Pins.AnyPin.AnyPin` need to be initialized with some data type, other defined pin. This flag overrides that. Used in lists and non typed nodes
-    DictElementSupported = auto()  #: Dicts are constructed with :class:`DictElement` objects. So dict pins will only allow other dicts until this flag enabled. Used in :class:`~PyFlow.Packages.PyFlowBase.Nodes.makeDict` node
+    AllowAny = auto()  #: Special flag that allow a pin to be :class:`~PyFlow.Packages.Base.Pins.AnyPin.AnyPin`, which means non typed without been marked as error. By default a :py:class:`PyFlow.Packages.Base.Pins.AnyPin.AnyPin` need to be initialized with some data type, other defined pin. This flag overrides that. Used in lists and non typed nodes
+    DictElementSupported = auto()  #: Dicts are constructed with :class:`DictElement` objects. So dict pins will only allow other dicts until this flag enabled. Used in :class:`~PyFlow.Packages.Base.Nodes.makeDict` node
 
 
 class StructureType(IntEnum):

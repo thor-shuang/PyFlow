@@ -1,48 +1,48 @@
-PyFlow.Packages.PyFlowBase.Pins package
+PyFlow.Packages.Base.Pins package
 =======================================
 
 Submodules
 ----------
 
-PyFlow.Packages.PyFlowBase.Pins.AnyPin module
+PyFlow.Packages.Base.Pins.AnyPin module
 ---------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Pins.AnyPin
+.. automodule:: PyFlow.Packages.Base.Pins.AnyPin
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Pins.BoolPin module
+PyFlow.Packages.Base.Pins.BoolPin module
 ----------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Pins.BoolPin
+.. automodule:: PyFlow.Packages.Base.Pins.BoolPin
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Pins.ExecPin module
+PyFlow.Packages.Base.Pins.ExecPin module
 ----------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Pins.ExecPin
+.. automodule:: PyFlow.Packages.Base.Pins.ExecPin
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Pins.FloatPin module
+PyFlow.Packages.Base.Pins.FloatPin module
 -----------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Pins.FloatPin
+.. automodule:: PyFlow.Packages.Base.Pins.FloatPin
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Pins.IntPin module
+PyFlow.Packages.Base.Pins.IntPin module
 ---------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Pins.IntPin
+.. automodule:: PyFlow.Packages.Base.Pins.IntPin
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.Pins.StringPin module
+PyFlow.Packages.Base.Pins.StringPin module
 ------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Pins.StringPin
+.. automodule:: PyFlow.Packages.Base.Pins.StringPin
    :members:
    :show-inheritance:
 
@@ -50,6 +50,6 @@ PyFlow.Packages.PyFlowBase.Pins.StringPin module
 Module contents
 ---------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.Pins
+.. automodule:: PyFlow.Packages.Base.Pins
    :members:
    :show-inheritance:

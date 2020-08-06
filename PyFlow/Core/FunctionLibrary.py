@@ -27,7 +27,7 @@ Detailed description
 ====================
 
 We use this function as decorator in 100% cases.
-See :file:`PyFlow/Packages/PyFlowBase/FunctionLibraries` content for plenty of examples
+See :file:`PyFlow/Packages/Base/FunctionLibraries` content for plenty of examples
 
 Arguments
 ---------

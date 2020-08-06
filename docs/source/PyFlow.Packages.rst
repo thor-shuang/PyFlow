@@ -6,7 +6,7 @@ Subpackages
 
 .. toctree::
 
-   PyFlow.Packages.PyFlowBase
+   PyFlow.Packages.Base
 
 Module contents
 ---------------

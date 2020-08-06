@@ -1,27 +1,27 @@
-PyFlow.Packages.PyFlowBase.PrefsWidgets package
+PyFlow.Packages.Base.PrefsWidgets package
 ===============================================
 
 Submodules
 ----------
 
-PyFlow.Packages.PyFlowBase.PrefsWidgets.General module
+PyFlow.Packages.Base.PrefsWidgets.General module
 ------------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.PrefsWidgets.General
+.. automodule:: PyFlow.Packages.Base.PrefsWidgets.General
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.PrefsWidgets.InputPrefs module
+PyFlow.Packages.Base.PrefsWidgets.InputPrefs module
 ---------------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.PrefsWidgets.InputPrefs
+.. automodule:: PyFlow.Packages.Base.PrefsWidgets.InputPrefs
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.PrefsWidgets.ThemePrefs module
+PyFlow.Packages.Base.PrefsWidgets.ThemePrefs module
 ---------------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.PrefsWidgets.ThemePrefs
+.. automodule:: PyFlow.Packages.Base.PrefsWidgets.ThemePrefs
    :members:
    :show-inheritance:
 
@@ -29,6 +29,6 @@ PyFlow.Packages.PyFlowBase.PrefsWidgets.ThemePrefs module
 Module contents
 ---------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.PrefsWidgets
+.. automodule:: PyFlow.Packages.Base.PrefsWidgets
    :members:
    :show-inheritance:

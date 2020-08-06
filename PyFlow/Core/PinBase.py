@@ -846,7 +846,7 @@ class PinBase(IPin):
         return can
 
     def getDictElementNode(self, checked=[], node=None):
-        """Get the connected :py:class:`PyFlow.Packages.PyFlowBase.Nodes.makeDictElement.makeDictElement` to this pin recursively
+        """Get the connected :py:class:`PyFlow.Packages.Base.Nodes.makeDictElement.makeDictElement` to this pin recursively
 
         :param checked: Currently visited pins, defaults to []
         :type checked: list, optional
@@ -870,8 +870,8 @@ class PinBase(IPin):
         return node
 
     def getDictNode(self, checked=[], node=None):
-        """Get the connected :py:class:`PyFlow.Packages.PyFlowBase.Nodes.makeDict.makeDict` or
-        :py:class:`PyFlow.Packages.PyFlowBase.Nodes.makeAnyDict.makeAnyDict` to this pin recursively
+        """Get the connected :py:class:`PyFlow.Packages.Base.Nodes.makeDict.makeDict` or
+        :py:class:`PyFlow.Packages.Base.Nodes.makeAnyDict.makeAnyDict` to this pin recursively
 
         :param checked: Currently visited pins, defaults to []
         :type checked: list, optional

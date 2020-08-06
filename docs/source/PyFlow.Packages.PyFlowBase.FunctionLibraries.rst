@@ -1,69 +1,69 @@
-PyFlow.Packages.PyFlowBase.FunctionLibraries package
+PyFlow.Packages.Base.FunctionLibraries package
 ====================================================
 
 Submodules
 ----------
 
-PyFlow.Packages.PyFlowBase.FunctionLibraries.ArrayLib module
+PyFlow.Packages.Base.FunctionLibraries.ArrayLib module
 ------------------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.FunctionLibraries.ArrayLib
+.. automodule:: PyFlow.Packages.Base.FunctionLibraries.ArrayLib
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.FunctionLibraries.BoolLib module
+PyFlow.Packages.Base.FunctionLibraries.BoolLib module
 -----------------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.FunctionLibraries.BoolLib
+.. automodule:: PyFlow.Packages.Base.FunctionLibraries.BoolLib
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.FunctionLibraries.DefaultLib module
+PyFlow.Packages.Base.FunctionLibraries.DefaultLib module
 --------------------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.FunctionLibraries.DefaultLib
+.. automodule:: PyFlow.Packages.Base.FunctionLibraries.DefaultLib
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.FunctionLibraries.FloatLib module
+PyFlow.Packages.Base.FunctionLibraries.FloatLib module
 ------------------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.FunctionLibraries.FloatLib
+.. automodule:: PyFlow.Packages.Base.FunctionLibraries.FloatLib
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.FunctionLibraries.IntLib module
+PyFlow.Packages.Base.FunctionLibraries.IntLib module
 ----------------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.FunctionLibraries.IntLib
+.. automodule:: PyFlow.Packages.Base.FunctionLibraries.IntLib
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.FunctionLibraries.MathAbstractLib module
+PyFlow.Packages.Base.FunctionLibraries.MathAbstractLib module
 -------------------------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.FunctionLibraries.MathAbstractLib
+.. automodule:: PyFlow.Packages.Base.FunctionLibraries.MathAbstractLib
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.FunctionLibraries.MathLib module
+PyFlow.Packages.Base.FunctionLibraries.MathLib module
 -----------------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.FunctionLibraries.MathLib
+.. automodule:: PyFlow.Packages.Base.FunctionLibraries.MathLib
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.FunctionLibraries.PathLib module
+PyFlow.Packages.Base.FunctionLibraries.PathLib module
 -----------------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.FunctionLibraries.PathLib
+.. automodule:: PyFlow.Packages.Base.FunctionLibraries.PathLib
    :members:
    :show-inheritance:
 
-PyFlow.Packages.PyFlowBase.FunctionLibraries.RandomLib module
+PyFlow.Packages.Base.FunctionLibraries.RandomLib module
 -------------------------------------------------------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.FunctionLibraries.RandomLib
+.. automodule:: PyFlow.Packages.Base.FunctionLibraries.RandomLib
    :members:
    :show-inheritance:
 
@@ -71,6 +71,6 @@ PyFlow.Packages.PyFlowBase.FunctionLibraries.RandomLib module
 Module contents
 ---------------
 
-.. automodule:: PyFlow.Packages.PyFlowBase.FunctionLibraries
+.. automodule:: PyFlow.Packages.Base.FunctionLibraries
    :members:
    :show-inheritance:

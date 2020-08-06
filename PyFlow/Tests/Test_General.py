@@ -31,9 +31,9 @@ class TestGeneral(unittest.TestCase):
     def test_connect_pins_by_indexes(self):
         man = GraphManager()
         packages = GET_PACKAGES()
-        mathLib = packages['PyFlowBase'].GetFunctionLibraries()["MathAbstractLib"]
-        defaultLib = packages['PyFlowBase'].GetFunctionLibraries()["DefaultLib"]
-        classNodes = packages['PyFlowBase'].GetNodeClasses()
+        mathLib = packages['Base'].GetFunctionLibraries()["MathAbstractLib"]
+        defaultLib = packages['Base'].GetFunctionLibraries()["DefaultLib"]
+        classNodes = packages['Base'].GetNodeClasses()
         foos = mathLib.getFunctions()
         defaultLibFoos = defaultLib.getFunctions()
 
@@ -59,7 +59,7 @@ class TestGeneral(unittest.TestCase):
     def test_graph_location(self):
         packages = GET_PACKAGES()
         man = GraphManager()
-        subgraphNodeClass = packages['PyFlowBase'].GetNodeClasses()['compound']
+        subgraphNodeClass = packages['Base'].GetNodeClasses()['compound']
         subgraphNodeInstance = subgraphNodeClass(str('compound'))
         man.activeGraph().addNode(subgraphNodeInstance)
 
@@ -71,9 +71,9 @@ class TestGeneral(unittest.TestCase):
     def test_add_int_no_exec(self):
         man = GraphManager()
         packages = GET_PACKAGES()
-        mathLib = packages['PyFlowBase'].GetFunctionLibraries()["MathAbstractLib"]
-        defaultLib = packages['PyFlowBase'].GetFunctionLibraries()["DefaultLib"]
-        classNodes = packages['PyFlowBase'].GetNodeClasses()
+        mathLib = packages['Base'].GetFunctionLibraries()["MathAbstractLib"]
+        defaultLib = packages['Base'].GetFunctionLibraries()["DefaultLib"]
+        classNodes = packages['Base'].GetNodeClasses()
         foos = mathLib.getFunctions()
         defaultLibFoos = defaultLib.getFunctions()
 
@@ -98,9 +98,9 @@ class TestGeneral(unittest.TestCase):
 
     def test_foo_node_ref_set_data(self):
         packages = GET_PACKAGES()
-        randomLib = packages['PyFlowBase'].GetFunctionLibraries()["RandomLib"]
-        defaultLib = packages['PyFlowBase'].GetFunctionLibraries()["DefaultLib"]
-        classNodes = packages['PyFlowBase'].GetNodeClasses()
+        randomLib = packages['Base'].GetFunctionLibraries()["RandomLib"]
+        defaultLib = packages['Base'].GetFunctionLibraries()["DefaultLib"]
+        classNodes = packages['Base'].GetNodeClasses()
         randomLibFoos = randomLib.getFunctions()
         defaultLibFoos = defaultLib.getFunctions()
 
@@ -129,7 +129,7 @@ class TestGeneral(unittest.TestCase):
     def test_reconnect_value(self):
         packages = GET_PACKAGES()
 
-        defaultLib = packages['PyFlowBase'].GetFunctionLibraries()["DefaultLib"]
+        defaultLib = packages['Base'].GetFunctionLibraries()["DefaultLib"]
         foos = defaultLib.getFunctions()
 
         n1 = NodeBase.initializeFromFunction(foos["makeBool"])
@@ -168,7 +168,7 @@ class TestGeneral(unittest.TestCase):
 
     def test_are_pins_connected(self):
         packages = GET_PACKAGES()
-        intlib = packages['PyFlowBase'].GetFunctionLibraries()["MathAbstractLib"]
+        intlib = packages['Base'].GetFunctionLibraries()["MathAbstractLib"]
         foos = intlib.getFunctions()
 
         addNode1 = NodeBase.initializeFromFunction(foos["add"])
@@ -206,9 +206,9 @@ class TestGeneral(unittest.TestCase):
 
         # create two subgraphs and variables inside
         packages = GET_PACKAGES()
-        subgraphNodeClass = packages['PyFlowBase'].GetNodeClasses()['compound']
-        varGetterClass = packages['PyFlowBase'].GetNodeClasses()['getVar']
-        varSetterClass = packages['PyFlowBase'].GetNodeClasses()['setVar']
+        subgraphNodeClass = packages['Base'].GetNodeClasses()['compound']
+        varGetterClass = packages['Base'].GetNodeClasses()['getVar']
+        varSetterClass = packages['Base'].GetNodeClasses()['setVar']
 
         subgraphNodeInstance1 = subgraphNodeClass('subgraph1')
         subgraphNodeInstance2 = subgraphNodeClass('subgraph2')
@@ -261,7 +261,7 @@ class TestGeneral(unittest.TestCase):
 
     def test_get_bool_var(self):
         packages = GET_PACKAGES()
-        classNodes = packages["PyFlowBase"].GetNodeClasses()
+        classNodes = packages["Base"].GetNodeClasses()
 
         man = GraphManager()
 
@@ -270,13 +270,13 @@ class TestGeneral(unittest.TestCase):
         v1.value = False
 
         # create variable getter node
-        varGetterClass = packages["PyFlowBase"].GetNodeClasses()['getVar']
+        varGetterClass = packages["Base"].GetNodeClasses()['getVar']
         # since variable is bool, bool pin will be created
         varGetterInstance = varGetterClass(str('v1Getter'), v1)
         man.activeGraph().addNode(varGetterInstance)
 
         # create print node
-        defaultLib = packages["PyFlowBase"].GetFunctionLibraries()['DefaultLib']
+        defaultLib = packages["Base"].GetFunctionLibraries()['DefaultLib']
         printerInstance = classNodes["consoleOutput"]("print")
         man.activeGraph().addNode(printerInstance)
 
@@ -309,13 +309,13 @@ class TestGeneral(unittest.TestCase):
         v1.value = False
 
         # create variable getter node
-        varGetterClass = packages["PyFlowBase"].GetNodeClasses()['getVar']
+        varGetterClass = packages["Base"].GetNodeClasses()['getVar']
         varGetterInstance = varGetterClass(str('v1Getter'), v1)
         man.activeGraph().addNode(varGetterInstance)
 
         # create print node
-        defaultLib = packages["PyFlowBase"].GetFunctionLibraries()['DefaultLib']
-        printerInstance = packages["PyFlowBase"].GetNodeClasses()['consoleOutput']("print")
+        defaultLib = packages["Base"].GetFunctionLibraries()['DefaultLib']
+        printerInstance = packages["Base"].GetNodeClasses()['consoleOutput']("print")
         man.activeGraph().addNode(printerInstance)
 
         # connect to print node input
@@ -339,7 +339,7 @@ class TestGeneral(unittest.TestCase):
         v1.value = False
 
         # create variable setter node
-        varSetterClass = packages["PyFlowBase"].GetNodeClasses()['setVar']
+        varSetterClass = packages["Base"].GetNodeClasses()['setVar']
         varSetterInstance = varSetterClass(str('v1Setter'), v1)
         setterAdded = man.activeGraph().addNode(varSetterInstance)
         self.assertEqual(setterAdded, True)
@@ -366,7 +366,7 @@ class TestGeneral(unittest.TestCase):
         man = GraphManager()
 
         # create empty compound
-        subgraphNodeClass = packages['PyFlowBase'].GetNodeClasses()['compound']
+        subgraphNodeClass = packages['Base'].GetNodeClasses()['compound']
         subgraphNodeInstance = subgraphNodeClass(str('compound'))
         man.activeGraph().addNode(subgraphNodeInstance)
 
@@ -402,18 +402,18 @@ class TestGeneral(unittest.TestCase):
         self.assertIsNotNone(subgraphOutAnyExec, "failed to find compound out exec pin")
 
         # add print node inside
-        foos = packages['PyFlowBase'].GetFunctionLibraries()["DefaultLib"].getFunctions()
+        foos = packages['Base'].GetFunctionLibraries()["DefaultLib"].getFunctions()
 
-        printNode1 = packages["PyFlowBase"].GetNodeClasses()['consoleOutput']("print")
+        printNode1 = packages["Base"].GetNodeClasses()['consoleOutput']("print")
         man.activeGraph().addNode(printNode1)
         printNode1.setData("entity", "hello from compound")
 
     def test_graph_serialization(self):
         man = GraphManager()
         packages = GET_PACKAGES()
-        lib = packages['PyFlowBase'].GetFunctionLibraries()["MathAbstractLib"]
-        defaultLib = packages['PyFlowBase'].GetFunctionLibraries()["DefaultLib"]
-        classNodes = packages['PyFlowBase'].GetNodeClasses()
+        lib = packages['Base'].GetFunctionLibraries()["MathAbstractLib"]
+        defaultLib = packages['Base'].GetFunctionLibraries()["DefaultLib"]
+        classNodes = packages['Base'].GetNodeClasses()
         foos = lib.getFunctions()
         defFoos = defaultLib.getFunctions()
 
@@ -453,7 +453,7 @@ class TestGeneral(unittest.TestCase):
         man = GraphManager()
         packages = GET_PACKAGES()
 
-        subgraphNodeClass = packages['PyFlowBase'].GetNodeClasses()['compound']
+        subgraphNodeClass = packages['Base'].GetNodeClasses()['compound']
         subgraphNodeInstance = subgraphNodeClass(str(str('compound')))
         man.activeGraph().addNode(subgraphNodeInstance)
 
@@ -466,7 +466,7 @@ class TestGeneral(unittest.TestCase):
         man = GraphManager()
         packages = GET_PACKAGES()
 
-        subgraphNodeClass = packages['PyFlowBase'].GetNodeClasses()['compound']
+        subgraphNodeClass = packages['Base'].GetNodeClasses()['compound']
         subgraphNodeInstance = subgraphNodeClass(str('compound'))
         man.activeGraph().addNode(subgraphNodeInstance)
         man.selectGraph(subgraphNodeInstance)
@@ -515,9 +515,9 @@ class TestGeneral(unittest.TestCase):
         packages = GET_PACKAGES()
         man = GraphManager()
 
-        classNodes = packages['PyFlowBase'].GetNodeClasses()
-        defaultLib = packages['PyFlowBase'].GetFunctionLibraries()["DefaultLib"].getFunctions()
-        arrayLib = packages['PyFlowBase'].GetFunctionLibraries()["ArrayLib"].getFunctions()
+        classNodes = packages['Base'].GetNodeClasses()
+        defaultLib = packages['Base'].GetFunctionLibraries()["DefaultLib"].getFunctions()
+        arrayLib = packages['Base'].GetFunctionLibraries()["ArrayLib"].getFunctions()
 
         makeArrayNode = classNodes['makeArray']("makeArray")
         arraySlice = NodeBase.initializeFromFunction(arrayLib["arraySlice"])
