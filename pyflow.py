@@ -15,7 +15,7 @@
 
 import sys
 from PyFlow.App import PyFlow
-from Qt.QtWidgets import QApplication
+from PySide2.QtWidgets import QApplication
 
 
 def main():
