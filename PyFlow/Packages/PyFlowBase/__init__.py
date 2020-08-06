@@ -206,10 +206,12 @@ class PyFlowBase(IPackage):
     @staticmethod
     def GetFunctionLibraries():
         return _FOO_LIBS
+        # return {}
 
     @staticmethod
     def GetNodeClasses():
         return _NODES
+        # return {}
 
     @staticmethod
     def GetPinClasses():
