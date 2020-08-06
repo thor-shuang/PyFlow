@@ -25,7 +25,7 @@ class MayaRigLib(FunctionLibraryBase):
         return int(x)
 
     @staticmethod
-    @IMPLEMENT_NODE(returns=('BoolPin', False), meta={'Category': 'Rig', 'Keywords': []})
+    @IMPLEMENT_NODE(returns=('BoolPin', False), nodeType=NodeTypes.Callable, meta={'Category': 'Rig', 'Keywords': []})
     def rotatePlaneIK(joint_list=("StringPin", ""), pv_locator=("StringPin", "")):
         """给骨骼链创建一套旋转平面ik绑定"""
         print 'create rotate plane ik',joint_list, pv_locator
@@ -34,16 +34,20 @@ class MayaRigLib(FunctionLibraryBase):
     @staticmethod
     @IMPLEMENT_NODE(returns=('BoolPin', False), nodeType=NodeTypes.Callable,
                     meta={'Category': 'Rig', 'Keywords': []})
-    def fk(joint_list=("StringPin", ""), group_num=("StringPin", "")):
+    def fk(joint_list=("StringPin", ""), group_num=("IntPin", 1)):
         """给骨骼链创建一套fk绑定"""
-        print 'create fk', joint_list
+        print 'create fk', joint_list, type(joint_list), group_num, type(group_num)
         return True
 
     @staticmethod
-    @IMPLEMENT_NODE(returns=('BoolPin', False), meta={'Category': 'Rig', 'Keywords': []})
-    def fkik(joint_list=("StringPin", ""), pv_locator=("StringPin", "")):
+    @IMPLEMENT_NODE(returns=('BoolPin', False), nodeType=NodeTypes.Callable, meta={'Category': 'Rig', 'Keywords': []})
+    def fkik(joint_list=("StringPin", ""),
+             pv_locator=("StringPin", ""),
+             secondary_bind=('BoolPin', False),
+             secondary_jnt_num=("IntPin", 4),
+             seamless=('BoolPin', False)):
         """给骨骼链创建一套fkik绑定，具有拉伸，次级等效果"""
-        print 'create fkik', joint_list, pv_locator
+        print 'create fkik', joint_list, pv_locator, secondary_bind, secondary_jnt_num, seamless
         return True
 
     @staticmethod
@@ -55,4 +59,4 @@ class MayaRigLib(FunctionLibraryBase):
     @IMPLEMENT_NODE(returns=("StringPin", 'locator'), meta={'Category': 'Rig', 'Keywords': []})
     def locator():
         """加载一个locator"""
-        return pm.ls(type='locator')[0]
+        return pm.selected(type='transform')[0]
