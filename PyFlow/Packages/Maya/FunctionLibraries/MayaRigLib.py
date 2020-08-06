@@ -26,35 +26,28 @@ class MayaRigLib(FunctionLibraryBase):
 
     @staticmethod
     @IMPLEMENT_NODE(returns=('BoolPin', False), meta={'Category': 'Rig', 'Keywords': []})
-    def rotatePlaneIK(rootJnt=("StringPin", ""), endJnt=("StringPin", ""), pv_locator=("StringPin", "")):
+    def rotatePlaneIK(joint_list=("StringPin", ""), pv_locator=("StringPin", "")):
         """给骨骼链创建一套旋转平面ik绑定"""
-        print 'create rotate plane ik', rootJnt, endJnt, pv_locator
+        print 'create rotate plane ik',joint_list, pv_locator
         return True
 
     @staticmethod
     @IMPLEMENT_NODE(returns=('BoolPin', False), nodeType=NodeTypes.Callable,
                     meta={'Category': 'Rig', 'Keywords': []})
-    def fk(rootJnt=("StringPin", ""), endJnt=("StringPin", "")):
+    def fk(joint_list=("StringPin", ""), group_num=("StringPin", "")):
         """给骨骼链创建一套fk绑定"""
-        print 'create fk', rootJnt, endJnt
+        print 'create fk', joint_list
         return True
 
     @staticmethod
     @IMPLEMENT_NODE(returns=('BoolPin', False), meta={'Category': 'Rig', 'Keywords': []})
     def fkik(joint_list=("StringPin", ""), pv_locator=("StringPin", "")):
         """给骨骼链创建一套fkik绑定，具有拉伸，次级等效果"""
-        print 'create fkik', joint_list, endJnt, pv_locator
+        print 'create fkik', joint_list, pv_locator
         return True
 
     @staticmethod
-    @IMPLEMENT_NODE(returns=("StringPin", 'joint1'), meta={'Category': 'Rig', 'Keywords': []})
-    def joint():
-        """加载一根骨骼"""
-        print pm.ls(type='joint')[0]
-        return pm.ls(type='joint')[0]
-
-    @staticmethod
-    @IMPLEMENT_NODE(returns=("StringPin", []), meta={'Category': 'Selection', 'Keywords': []})
+    @IMPLEMENT_NODE(returns=("StringPin", []), meta={'Category': 'Rig', 'Keywords': []})
     def joint_list():
         return pm.selected(type='joint')
 
