@@ -1,5 +1,3 @@
-import pymel.core as pm
-
 from PyFlow.Packages.Maya.Nodes import EVENT_NODE_HEADER_COLOR
 from PyFlow.Core import NodeBase
 from PyFlow.Core.Common import *
