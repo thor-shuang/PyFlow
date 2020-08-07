@@ -19,7 +19,7 @@ class eventCurrentFrameChanged(NodeBase):
         helper = NodePinsSuggestionsHelper()
         helper.addOutputDataType('ExecPin')
         helper.addOutputDataType('IntPin')
-        helper.addOutputStruct(PinStructure.Single)
+        helper.addOutputStruct(StructureType.Single)
         return helper
 
     @staticmethod

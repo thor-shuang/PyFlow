@@ -16,7 +16,7 @@ class scriptEntry(NodeBase):
     def pinTypeHints():
         helper = NodePinsSuggestionsHelper()
         helper.addOutputDataType('ExecPin')
-        helper.addOutputStruct(PinStructure.Single)
+        helper.addOutputStruct(StructureType.Single)
         return helper
 
     @staticmethod
