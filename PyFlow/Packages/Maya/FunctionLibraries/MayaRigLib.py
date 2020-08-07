@@ -11,6 +11,13 @@ from PyFlow.Core.Common import *
 from PyFlow.Core import FunctionLibraryBase
 from PyFlow.Core import IMPLEMENT_NODE
 import pymel.core as pm
+import sys
+
+rig_path = r'D:\code\MyItem\rig'
+if rig_path not in sys.path:
+    sys.path.append(rig_path)
+
+from binding_system.core.rig_operation import Rig
 
 
 class MayaRigLib(FunctionLibraryBase):
@@ -25,22 +32,31 @@ class MayaRigLib(FunctionLibraryBase):
         return int(x)
 
     @staticmethod
-    @IMPLEMENT_NODE(returns=('BoolPin', False), nodeType=NodeTypes.Callable, meta={'Category': 'Rig', 'Keywords': []})
+    @IMPLEMENT_NODE(returns=('BoolPin', False), nodeType=NodeTypes.Callable,
+                    meta={'Category': 'Rig', 'Keywords': ['rotatePlaneIK', 'ik', 'rig']})
     def rotatePlaneIK(joint_list=("StringPin", ""), pv_locator=("StringPin", "")):
-        """给骨骼链创建一套旋转平面ik绑定"""
-        print 'create rotate plane ik',joint_list, pv_locator
+        """给骨骼链创建一套旋转平面ik绑定,具有拉伸和极向量lock设置"""
+        from binding_system.core.component_rig.arm_bind import ArmBindForTest
+        skjnt_list = [pm.PyNode(i) for i in joint_list]
+        ArmBindForTest(skjnt_list=skjnt_list, pv_lct=pm.PyNode(pv_locator), sec_bind=False, knot=4,
+                       bind_type='ik').main()
+        print 'create rotate plane ik', joint_list, pv_locator
         return True
 
     @staticmethod
     @IMPLEMENT_NODE(returns=('BoolPin', False), nodeType=NodeTypes.Callable,
-                    meta={'Category': 'Rig', 'Keywords': []})
+                    meta={'Category': 'Rig', 'Keywords': ['fk', 'rig']})
     def fk(joint_list=("StringPin", ""), group_num=("IntPin", 1)):
         """给骨骼链创建一套fk绑定"""
+        from binding_system.core.functional_abstract_class.fk import FkSystem
+        jnt_list = Rig.sort_by_parent_first(joint_list, reverse=False)
+        FkSystem(jnt_list).create_fk_control(grp_num=group_num)
         print 'create fk', joint_list, type(joint_list), group_num, type(group_num)
         return True
 
     @staticmethod
-    @IMPLEMENT_NODE(returns=('BoolPin', False), nodeType=NodeTypes.Callable, meta={'Category': 'Rig', 'Keywords': []})
+    @IMPLEMENT_NODE(returns=('BoolPin', False), nodeType=NodeTypes.Callable,
+                    meta={'Category': 'Rig', 'Keywords': ['fkik', 'fk', 'ik', 'rig']})
     def fkik(joint_list=("StringPin", ""),
              pv_locator=("StringPin", ""),
              secondary_bind=('BoolPin', False),
@@ -51,12 +67,15 @@ class MayaRigLib(FunctionLibraryBase):
         return True
 
     @staticmethod
-    @IMPLEMENT_NODE(returns=("StringPin", []), meta={'Category': 'Rig', 'Keywords': []})
-    def joint_list():
-        return pm.selected(type='joint')
+    @IMPLEMENT_NODE(returns=("StringPin", []), nodeType=NodeTypes.Callable,
+                    meta={'Category': 'Rig', 'Keywords': ['getSelectJntList', 'joint', 'rig']})
+    def getJntList():
+        """获取当前选择的骨骼链（Get the currently selected bone chain）"""
+        return [jnt.name() for jnt in pm.selected(type='joint')]
 
     @staticmethod
-    @IMPLEMENT_NODE(returns=("StringPin", 'locator'), meta={'Category': 'Rig', 'Keywords': []})
-    def locator():
-        """加载一个locator"""
+    @IMPLEMENT_NODE(returns=("StringPin", 'select locator'), nodeType=NodeTypes.Callable,
+                    meta={'Category': 'Rig', 'Keywords': ['locator', 'getLocator', 'rig']})
+    def getLocator():
+        """获取选择的locator"""
         return pm.selected(type='transform')[0]
