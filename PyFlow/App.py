@@ -83,7 +83,7 @@ def getOrCreateMenu(menuBar, title):
 
 
 def winTitle():
-    return "NodeEditor v{0}".format(currentVersion().__str__())
+    return "NodeEditor v{0}-Beta".format(currentVersion().__str__())
 
 
 ## App itself
@@ -149,7 +149,7 @@ class PyFlow(QMainWindow):
         self.updateLabel()
 
     def updateLabel(self):
-        label = "for @@ test"
+        label = "For @@ Rig Test"
         if self.currentFileName is not None:
             if os.path.isfile(self.currentFileName):
                 label = os.path.basename(self.currentFileName)
