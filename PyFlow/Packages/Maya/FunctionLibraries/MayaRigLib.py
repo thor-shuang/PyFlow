@@ -66,7 +66,7 @@ class MayaRigLib(FunctionLibraryBase):
         """给骨骼链创建一套fkik绑定，具有拉伸，次级等效果"""
         from binding_system.core.component_rig.arm_bind import ArmBindForTest
         skjnt_list = [pm.PyNode(i) for i in joint_list]
-        ArmBindForTest(skjnt_list=skjnt_list, pv_lct=pm.PyNode(pv_locator), sec_bind=secondary_bind,
+        ArmBindForTest(skjnt_list=skjnt_list, pv_lct=pm.PyNode(pv_locator), sec_bind=secondary_bind, seamless=seamless,
                        knot=secondary_jnt_num, bind_type='fkik').main()
         print 'create fkik --->', joint_list, pv_locator, secondary_bind, secondary_jnt_num, seamless
         return True
