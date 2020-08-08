@@ -149,7 +149,7 @@ class PyFlow(QMainWindow):
         self.updateLabel()
 
     def updateLabel(self):
-        label = "For @@ Rig Test"
+        label = "For EA Rig Test"
         if self.currentFileName is not None:
             if os.path.isfile(self.currentFileName):
                 label = os.path.basename(self.currentFileName)
