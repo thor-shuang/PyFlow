@@ -29,14 +29,14 @@ _TOOLS = OrderedDict()
 _PREFS_WIDGETS = OrderedDict()
 _EXPORTERS = OrderedDict()
 
-_NODES[eventCurrentFrameChanged.__name__] = eventCurrentFrameChanged
+# _NODES[eventCurrentFrameChanged.__name__] = eventCurrentFrameChanged
 _NODES[scriptEntry.__name__] = scriptEntry
 
 _FOO_LIBS[MayaRigLib.__name__] = MayaRigLib(PACKAGE_NAME)
 _FOO_LIBS[MayaMathLib.__name__] = MayaMathLib(PACKAGE_NAME)
-_FOO_LIBS[MayaGeneralLib.__name__] = MayaGeneralLib(PACKAGE_NAME)
-_FOO_LIBS[MayaDisplayLib.__name__] = MayaDisplayLib(PACKAGE_NAME)
-_FOO_LIBS[MayaSelectionLib.__name__] = MayaSelectionLib(PACKAGE_NAME)
+# _FOO_LIBS[MayaGeneralLib.__name__] = MayaGeneralLib(PACKAGE_NAME)
+# _FOO_LIBS[MayaDisplayLib.__name__] = MayaDisplayLib(PACKAGE_NAME)
+# _FOO_LIBS[MayaSelectionLib.__name__] = MayaSelectionLib(PACKAGE_NAME)
 
 _PINS[MayaVectorPin.__name__] = MayaVectorPin
 
