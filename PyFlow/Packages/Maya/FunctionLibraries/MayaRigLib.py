@@ -41,7 +41,6 @@ class MayaRigLib(FunctionLibraryBase):
         from binding_system.core.functional_abstract_class.fk import FkSystem
         jnt_list = Rig.sort_by_parent_first(joint_list, reverse=False)
         FkSystem(jnt_list).create_fk_control(grp_num=group_num)
-        print 'create fk --->', joint_list, type(joint_list), group_num, type(group_num)
         return True
 
     @staticmethod
@@ -53,7 +52,6 @@ class MayaRigLib(FunctionLibraryBase):
         skjnt_list = [pm.PyNode(i) for i in joint_list]
         ArmBindForTest(skjnt_list=skjnt_list, pv_lct=pm.PyNode(pv_locator), sec_bind=False, knot=4,
                        bind_type='ik').main()
-        print 'create rotate plane ik --->', joint_list, pv_locator
         return True
 
     @staticmethod
@@ -69,7 +67,6 @@ class MayaRigLib(FunctionLibraryBase):
         skjnt_list = [pm.PyNode(i) for i in joint_list]
         ArmBindForTest(skjnt_list=skjnt_list, pv_lct=pm.PyNode(pv_locator), sec_bind=secondary_bind, seamless=seamless,
                        knot=secondary_jnt_num, bind_type='fkik').main()
-        print 'create fkik --->', joint_list, pv_locator, secondary_bind, secondary_jnt_num, seamless
         return True
 
     @staticmethod
