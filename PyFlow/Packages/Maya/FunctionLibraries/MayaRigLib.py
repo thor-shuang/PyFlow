@@ -16,6 +16,7 @@ from binding_system.core.rig_operation import Rig
 
 
 class MayaRigLib(FunctionLibraryBase):
+    """Maya内部绑定节点"""
 
     def __init__(self, packageName):
         super(MayaRigLib, self).__init__(packageName)
@@ -83,4 +84,6 @@ class MayaRigLib(FunctionLibraryBase):
                     meta={'Category': 'Rig', 'Keywords': ['locator', 'getLocator', 'rig']})
     def getLocator():
         """获取选择的locator"""
-        return pm.selected(type='transform')[0]
+        for obj in pm.selected(type='transform'):
+            if obj.listRelatives(ad=True, type='locator'):
+                return obj
